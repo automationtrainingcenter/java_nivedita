@@ -10,5 +10,5 @@ git status-->list the files you have changed and those you still need to add or 
 git remote add origin <server>-->connect to a remote repository
 git remote -v-->list all currently configured remote repositories
 git pull-->fetch and merge changes on remote server to working directory
-git log-->view changes
+git log-->view commit history
 git rm -r-->Remove a file or folder
