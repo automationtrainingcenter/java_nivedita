@@ -153,11 +153,18 @@ public class DatatypesDemo {
 		String is = Integer.toString(ip);
 		System.out.println(is+10);
 		
+		String fs = Float.toString(fp);
+		System.out.println(fs+10);
+		
 		//String to double
 		String pi = "3.14";
 		System.out.println(pi+10);
 		double ds = Double.parseDouble(pi);
 		System.out.println(ds+10);
+		
+		String si = "1223556688";
+		int istr = Integer.parseInt(si);
+		System.out.println(istr+10);
 		
 		
 		
