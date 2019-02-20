@@ -54,9 +54,9 @@ public class Operators {
 		a = s.nextBoolean();//true
 		b = s.nextBoolean();//false
 		// && (AND)
-		System.out.println("a AND b is: " + (a && b));//true
+		System.out.println("a AND b is: " + (a && b));//false
 		// ||(OR)
-		System.out.println("a OR b is: " + (a || b));//false
+		System.out.println("a OR b is: " + (a || b));//true
 		// ! (NOT)
 		System.out.println("NOT A is: " + (!a));
 	}
@@ -186,8 +186,8 @@ public class Operators {
 	public static void main(String[] args) {
 		s = new Scanner(System.in);
 		Operators obj = new Operators();
-		obj.arithmatic();
-//		obj.logical();
+//		obj.arithmatic();
+		obj.logical();
 //		obj.relational();
 //		obj.assignment();
 //		obj.bitwise();
