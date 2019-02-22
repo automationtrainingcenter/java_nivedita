@@ -122,6 +122,38 @@ public class ConditionalStatements {
 		}else {
 			System.out.println("invalid username");
 		}
+		
+		//switch case
+		System.out.println("enter a browser name you want to launch");
+		String brName = s.next().toLowerCase();
+		switch(brName) {
+		case "chrome":
+			System.out.println("launching chrome browser");
+			break;
+		case "firefox":
+			System.out.println("launching firefox browser");
+			break;
+		case "ie":
+			System.out.println("launching ie browser");
+			break;
+		case "edge":
+			System.out.println("launching edge browser");
+			break;
+		default:
+			System.out.println("invalid browser name");
+			break;
+		}
+		
+		// find a bigger number in given two numbers
+		
+		
+		// find a given character is vowel or not
+		
+		// find a bigger number in given 3 numbers
+		
+		
+		
+			
 	}
 
 }

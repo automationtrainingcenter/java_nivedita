@@ -33,6 +33,11 @@ public class ReadDataDemo {
 		boolean bool = s.nextBoolean();
 		System.out.println("boolean value si "+bool);
 		
+		//read a character from the console
+		System.out.println("enter a character value");
+		char ch = s.next().charAt(0);
+		System.out.println("character value is "+ch);
+		
 
 	}
 

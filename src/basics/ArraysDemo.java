@@ -1,4 +1,5 @@
 package basics;
+
 /*
  * Array is a collection of values of similar data type of fixed size. Arrays will store the information in
  * continuous memory locations. We can access array data by index values and this index value starts
@@ -44,73 +45,75 @@ package basics;
  * 								  {rMv1, rMv2, rMv3 ... rMvN}}
  */
 public class ArraysDemo {
-	
+
 	public static void main(String[] args) {
-		//array declaration
+		// array declaration
 		int[] numbers = new int[5];
-		
-		//assigning values to arrays
+
+		// assigning values to arrays
 		numbers[0] = 12;
 		numbers[1] = 14;
 		numbers[2] = 13;
 		numbers[3] = 15;
 		numbers[4] = 16;
 //		numbers[5] = 17;
+
+		// retrieve the data
+//		System.out.println(numbers[0]);
+//		System.out.println(numbers[1]);
+//		System.out.println(numbers[2]);
+//		System.out.println(numbers[3]);
+//		System.out.println(numbers[4]);
+
+		// normal for loop
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i]);
+		}
+
+		// initialization
+		char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+		// length of an array
+		System.out.println("number of elements in numbers array is " + numbers.length);
+
+//		System.out.println(vowels[0]);
+//		System.out.println(vowels[1]);
+//		System.out.println(vowels[2]);
+//		System.out.println(vowels[3]);
+//		System.out.println(vowels[4]);
 		
-		//retrieve the data
-		System.out.println(numbers[0]);
-		System.out.println(numbers[1]);
-		System.out.println(numbers[2]);
-		System.out.println(numbers[3]);
-		System.out.println(numbers[4]);
-		
-		//initialization
-		char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-	
-		//length of an array
-		System.out.println("number of elements in numbers array is "+numbers.length);
-		
-		
-		System.out.println(vowels[0]);
-		System.out.println(vowels[1]);
-		System.out.println(vowels[2]);
-		System.out.println(vowels[3]);
-		System.out.println(vowels[4]);
-		
-		
-		
+		for(char vowel : vowels) {
+			System.out.println(vowel);
+		}
+
 		// 2D arrays
 		int[][] matrix1 = new int[2][2];
-		
-		//assingning values to the matrix
+
+		// assingning values to the matrix
 		matrix1[0][0] = 1;
 		matrix1[0][1] = 0;
 		matrix1[1][0] = 0;
 		matrix1[1][1] = 1;
-		
+
 		// retrieving values from the matrix
-		System.out.print(matrix1[0][0]+"\t");
+		System.out.print(matrix1[0][0] + "\t");
 		System.out.println(matrix1[0][1]);
 //		System.out.println();
-		System.out.print(matrix1[1][0]+"\t");
+		System.out.print(matrix1[1][0] + "\t");
 		System.out.println(matrix1[1][1]);
-		
-		int[][] matrix2 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
-		
-		System.out.print(matrix2[0][0]+"\t");
-		System.out.print(matrix2[0][1]+"\t");
-		System.out.print(matrix2[0][2]+"\n");
-		System.out.print(matrix2[1][0]+"\t");
-		System.out.print(matrix2[1][1]+"\t");
-		System.out.print(matrix2[1][2]+"\n");
-		System.out.print(matrix2[2][0]+"\t");
-		System.out.print(matrix2[2][1]+"\t");
-		System.out.print(matrix2[2][2]+"\n");
-		
-		
-		
-		 
-		
+
+		int[][] matrix2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+		System.out.print(matrix2[0][0] + "\t");
+		System.out.print(matrix2[0][1] + "\t");
+		System.out.print(matrix2[0][2] + "\n");
+		System.out.print(matrix2[1][0] + "\t");
+		System.out.print(matrix2[1][1] + "\t");
+		System.out.print(matrix2[1][2] + "\n");
+		System.out.print(matrix2[2][0] + "\t");
+		System.out.print(matrix2[2][1] + "\t");
+		System.out.print(matrix2[2][2] + "\n");
+
 	}
 
 }
