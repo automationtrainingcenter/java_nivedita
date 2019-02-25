@@ -87,15 +87,23 @@ public class LoopsDemo {
 		int number = s.nextInt();
 		boolean flag = true;
 		for (int k = 2; k <= number / 2; k++) {
-			if(number % k == 0) {
+			if (number % k == 0) {
 				flag = false;
 				break; // terminates the current loop
 			}
 		}
-		if(flag) {
+		if (flag) {
 			System.out.println("given number is prime");
-		}else {
+		} else {
 			System.out.println("given number is not prime");
+		}
+
+		// continue statement
+		for (int k = 0; k < 10; k++) {
+			if (k %2 == 1) {
+				continue;
+			}
+			System.out.println(k);
 		}
 	}
 

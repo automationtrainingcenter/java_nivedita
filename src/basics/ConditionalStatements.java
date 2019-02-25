@@ -144,12 +144,7 @@ public class ConditionalStatements {
 			break;
 		}
 		
-		// find a bigger number in given two numbers
 		
-		
-		// find a given character is vowel or not
-		
-		// find a bigger number in given 3 numbers
 		
 		
 		

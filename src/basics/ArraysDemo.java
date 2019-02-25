@@ -81,8 +81,8 @@ public class ArraysDemo {
 //		System.out.println(vowels[2]);
 //		System.out.println(vowels[3]);
 //		System.out.println(vowels[4]);
-		
-		for(char vowel : vowels) {
+
+		for (char vowel : vowels) {
 			System.out.println(vowel);
 		}
 
@@ -96,23 +96,38 @@ public class ArraysDemo {
 		matrix1[1][1] = 1;
 
 		// retrieving values from the matrix
-		System.out.print(matrix1[0][0] + "\t");
-		System.out.println(matrix1[0][1]);
-//		System.out.println();
-		System.out.print(matrix1[1][0] + "\t");
-		System.out.println(matrix1[1][1]);
+//		System.out.print(matrix1[0][0] + "\t");
+//		System.out.println(matrix1[0][1]);
+////		System.out.println();
+//		System.out.print(matrix1[1][0] + "\t");
+//		System.out.println(matrix1[1][1]);
+		// rows loop
+		for (int i = 0; i < 2; i++) {
+			// columns loop
+			for (int j = 0; j < 2; j++) {
+				System.out.print(matrix1[i][j] + "\t");
+			}
+			System.out.println();
+		}
 
 		int[][] matrix2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
-		System.out.print(matrix2[0][0] + "\t");
-		System.out.print(matrix2[0][1] + "\t");
-		System.out.print(matrix2[0][2] + "\n");
-		System.out.print(matrix2[1][0] + "\t");
-		System.out.print(matrix2[1][1] + "\t");
-		System.out.print(matrix2[1][2] + "\n");
-		System.out.print(matrix2[2][0] + "\t");
-		System.out.print(matrix2[2][1] + "\t");
-		System.out.print(matrix2[2][2] + "\n");
+//		System.out.print(matrix2[0][0] + "\t");
+//		System.out.print(matrix2[0][1] + "\t");
+//		System.out.print(matrix2[0][2] + "\n");
+//		System.out.print(matrix2[1][0] + "\t");
+//		System.out.print(matrix2[1][1] + "\t");
+//		System.out.print(matrix2[1][2] + "\n");
+//		System.out.print(matrix2[2][0] + "\t");
+//		System.out.print(matrix2[2][1] + "\t");
+//		System.out.print(matrix2[2][2] + "\n");
+
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				System.out.print(matrix2[i][j]+"\t");
+			}
+			System.out.println();
+		}
 
 	}
 
