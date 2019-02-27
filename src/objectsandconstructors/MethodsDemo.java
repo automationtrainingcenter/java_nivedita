@@ -59,6 +59,7 @@ public class MethodsDemo {
 		obj.methodThree(10,  20);
 		boolean m4Result = obj.methodFour(10, 20);
 		System.out.println("output is "+m4Result);
+		
 	}
 	
 }
