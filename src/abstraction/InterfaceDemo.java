@@ -11,5 +11,13 @@ public interface InterfaceDemo {
 	void methodTwo();
 	
 	void methodThree();
+	
+	public static void staticMethod() {
+		System.out.println("static method of interface");
+	}
+	
+	public default void defaultMethod() {
+		System.out.println("default method of interface");
+	}
 
 }

@@ -26,5 +26,13 @@ public class InterfaceImpl implements InterfaceDemo, InterfaceTwo {
 	public void i2MethodTwo() {
 		System.out.println("i2 method two");
 	}
+	
+	@Override
+	public void defaultMethod() {
+		System.out.println("overriding the default method of interface");
+	}
+	
+	
+	
 
 }

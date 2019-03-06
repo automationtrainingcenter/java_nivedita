@@ -38,6 +38,10 @@ public class AbstractionDemo {
 		idObj.methodOne();
 		idObj.methodTwo();
 		idObj.methodThree();
+		//we can access default method of an interface using interface object refernce
+		idObj.defaultMethod();
+		//we can access static method of an interface using Interface name
+		InterfaceDemo.staticMethod();
 		
 		
 		InterfaceTwo i2Obj = new InterfaceImpl();
@@ -46,6 +50,44 @@ public class AbstractionDemo {
 		i2Obj.methodThree();
 		((InterfaceDemo)i2Obj).methodOne();
 		((InterfaceDemo)i2Obj).methodTwo();
+		
+		//functional interface object reference using normal class implementation
+		MyFunctionalInterface fiNorObj = new FunctionalIntefaceImpl();
+		fiNorObj.defaultMethod();
+		fiNorObj.methodOne();
+		
+		
+		//functional interface object reference using anonymous class
+		MyFunctionalInterface fiAnsObj = new MyFunctionalInterface() {
+			
+			@Override
+			public void methodOne() {
+				System.out.println("method one implementation using anonymous class");
+			}
+		};
+		 
+		fiAnsObj.methodOne();
+		fiAnsObj.defaultMethod();
+		
+		
+		//functional interface object reference using lambda expression
+		MyFunctionalInterface fiLamObj = ()->System.out.println("method one implementation using lambda expression");
+		fiLamObj.methodOne();
+		fiLamObj.defaultMethod();
+		
+		FuncInterface f1Obj = (String a, String b) ->  Integer.parseInt(a+b);
+		
+		FuncInterface f2Obj = (String a, String b) -> {
+			int ia = Integer.parseInt(a);
+			int ib = Integer.parseInt(b);
+			return ia+ib;
+		};
+		
+		System.out.println(f1Obj.method("10", "20")); //1020
+		
+		System.out.println(f2Obj.method("10", "20")); //30
+		
+		
 		
 	}
 
