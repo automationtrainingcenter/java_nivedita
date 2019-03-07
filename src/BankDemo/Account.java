@@ -1,6 +1,6 @@
 package BankDemo;
 
-public class Account {
+public class Account implements IAccount{
 
 	private int accNum = 234123;
 	private static int i = 0;

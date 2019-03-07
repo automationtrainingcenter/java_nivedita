@@ -88,6 +88,20 @@ public class AbstractionDemo {
 		System.out.println(f2Obj.method("10", "20")); //30
 		
 		
+		//inner interfaces
+		Outer oiObj = new OuterAndInnerImpl();
+		oiObj.methodOne().toLowerCase();
+		((Outer.Inner)oiObj).methodTwo();
+		
+//		Outer.Inner i = oiObj.method();
+//		i.methodTwo();
+		oiObj.method().methodTwo();
+		
+		Outer.Inner iiObj = new OuterAndInnerImpl();
+		iiObj.methodTwo();
+		((Outer)iiObj).methodOne();
+		
+		
 		
 	}
 
